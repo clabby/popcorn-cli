@@ -210,7 +210,7 @@ function promptAnime (query) {
       var mediaId = choicesMap[title.media]._id;
 
       request({
-        url: apiUrls.tv + '/anime/' + mediaId
+        url: apiUrls.anime + '/anime/' + mediaId
       }, function (error, response, body) {
         if (error && response.statusCode !== 200) {
           return logError('Error finding anime with ID \"' + mediaId + '\".');

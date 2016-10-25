@@ -74,7 +74,7 @@ function promptMovies (query) {
     var choicesMap = {};
     var choices = _.map(JSON.parse(body), function (media) {
       var fullTitle = media.title + ' (' + media.year + ')';
-      choicesMap[fullTitle] = media;
+      choicesMap[fullTitle] = media.torrents;
       return fullTitle;
     });
 
@@ -84,7 +84,7 @@ function promptMovies (query) {
       message: 'Choose the title of the movie you are looking for.',
       choices: choices
     }).then(function (title) {
-      var torrents = choicesMap[title.media].torrents;
+      var torrents = choicesMap[title.media];
 
       choices = [];
       choicesMap = {};

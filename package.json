@@ -1,0 +1,32 @@
+{
+  "name": "popcorn-cli",
+  "version": "0.0.1",
+  "description": "Popcorn Time torrent search for the command line.",
+  "private": true,
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "node ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clabby/popcorn-cli.git"
+  },
+  "keywords": [
+    "password"
+  ],
+  "author": "Ben Clabby",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/clabby/popcorn-cli/issues"
+  },
+  "homepage": "https://github.com/clabby/popcorn-cli#readme",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "inquirer": "^1.2.2",
+    "lodash": "^4.16.2",
+    "request": "^2.75.0"
+  },
+  "bin": {
+    "popcorn-cli": "./src/index.js"
+  }
+}
